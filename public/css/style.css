@@ -38,12 +38,12 @@ img {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 navbar .logo {
   font-size: 28px;
-  color: #393e46;
+  color: #00ff08;
   font-weight: bold;
   padding: 0 12%;
   margin-top: 32px;
@@ -62,11 +62,11 @@ navbar .logo {
 .main .create-join .text .head {
   font-size: 36px;
   font-weight: bold;
-  color: #393e46;
+  color: #00ff2a;
 }
 .main .create-join .text .subtext {
   font-size: 24px;
-  color: #6f6f6f;
+  color: #00ff33;
   margin-top: 10px;
 }
 .main .create-join .createroom-butt {
@@ -74,18 +74,18 @@ navbar .logo {
   margin-top: 60px;
   font-size: 24px;
   font-weight: bold;
-  background-color: #4ecca3;
+  background-color: #00a6ff;
   color: white;
   text-align: center;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  border: 2px solid #4ecca3;
+  border: 2px solid #000000;
   transition: 0.3s;
 }
 .main .create-join .createroom-butt:hover {
   background-color: white;
-  border: 2px solid #4ecca3;
+  border: 2px solid #000000;
   color: #4ecca3;
   cursor: pointer;
 }
@@ -112,24 +112,30 @@ navbar .logo {
   width: 100%;
   margin-top: 30px;
   font-size: 24px;
-  color: #393e46;
+
+  background-color: #00a6ff;
+  /* color: #393e46; */
+  color: white;
   text-align: center;
   padding: 10px 0;
   border: none;
-  border-bottom: 3px solid #232931;
-  border-top: 2px solid white;
+  border-radius: 10px;
+  /* border-bottom: 3px solid #232931; */
+  /* border-top: 2px solid white; */
   font-weight: bold;
 }
 .main .create-join .roomcode:focus {
-  background-color: white;
+  background-color: #ffffff;
   border: 0;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
   border-bottom: 3px solid #232931;
-  border-top: 2px solid white;
+  /* border-top: 2px solid white; */
   outline: none;
-  border-radius: 0;
+  /* border-radius: 0; */
 }
 .main .create-join .roomcode-error {
-  border-bottom: 3px solid #d31c1c;
+  /* border-bottom: 3px solid #d31c1c; */
 }
 .main .create-join .joinroom {
   margin-top: 20px;
@@ -137,7 +143,7 @@ navbar .logo {
   text-align: right;
   font-size: 24px;
   font-weight: bold;
-  color: #232931;
+  color: #00b7ff;
 }
 .main .create-join .joinroom:hover {
   cursor: pointer;

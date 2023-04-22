@@ -7,7 +7,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/6510466b6c.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 
 </head>
 
@@ -15,10 +27,6 @@
     <navbar>
         <div class="logo">Secure Meeting Platform</div>
     </navbar>
-    <!-- <div class="landing"> -->
-        <!-- <div class="head-cont unselectable">
-            Welcome to QuickMeet!
-        </div> -->
 
         <div class="main">
             <div class="create-join">
@@ -26,7 +34,9 @@
                 <div class="subtext">No sign ups required. Open Source platform.</div>
                 </div>
                 <button id="createroom" class="createroom-butt unselectable">Create Room</button><br>
-                <input type="text" name="room" spellcheck="false" placeholder="Enter Room Code" id="roomcode" class="roomcode"><br>
+                <div class="">
+                <input type="text" name="room" spellcheck="false" placeholder="Enter Room Code" id="roomcode" class="roomcode placeholder-white focus:placeholder-[#4ecca3]"><br>
+            </div>
                 <div class="joinroom unselectable" id="joinroom">Join Room</div>
             </div>
             <div class="video-cont">
@@ -38,20 +48,6 @@
             </div>
         </div>
 
-        <!-- <div class="main-cont">
-
-            <form class="roomform" action="room.html" method="GET">
-                <div class="formcont">
-                    <input type="text" name="name" placeholder="Enter your name" id="username" class="inputtext"><br>
-                    
-                    <button type="submit" class="butt unselectable" id="joinroom">Join Room</button>
-                    
-                </div>
-            </form>
-
-        </div> -->
-
-    <!-- </div> -->
 
     <script src="js/landing.js"></script>
 </body>
